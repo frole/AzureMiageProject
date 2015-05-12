@@ -1,7 +1,7 @@
 # Projet pluridisciplinaire - MIAGE Paris-Descartes - année 2014-2015
 
 Ce projet est proposé et suivi par François Role, maître de conférences à l'université Paris-Descartes - francois.role@parisdescartes.fr
-L'équipe projet est constitué de :
+L'équipe projet est constituée de :
 * Axelle Boyer
 * Emilie Cresson
 * Jean-Baptiste Dohet
@@ -10,7 +10,7 @@ L'équipe projet est constitué de :
 Cette page contient un descriptif du projet proposé ainsi que des éléments (indications de format, pseudo-code, etc.) fournis pour sa réalisation.
 
 ## Sujet proposé
-Ce projet a pour objectif de démontrer la faisabilité d'un accès aux services AzureML via une interface Web.
+Ce projet de fin d'étude proposé à des étudiants du Master Miage par apprentissage de Paris-Descartes a pour objectif de démontrer la faisabilité d'un accès aux services AzureML via une interface Web. Les principales fonctionnalités à implémenter sont décrites ci-après.
 L'utilisateur devra pouvoir à partir d'un serveur Node.js désigner via l'interface (par exmpel des listes déroulantes) un dataset à traiter (dataset stocké dans un Blob Azure) et un service pour traiter ce dataset. La liste des données disponibles (blobs à traiter)  pourra être retrouvée en utilisant l'API Azure (version Jvavscript). Les URL des services et leur codes d'accès seront fournis aux étudiants au cours du projet. Le premier service mis à disposition des étudiants sera le service "Census Income" qui permet de déterminer le niveau de revenu d'une personne en fonction de différentes caractéristiques. Un accès à un service de co-clustering sera aussi fourni en focntion de l'avancement du projet.
 
 
