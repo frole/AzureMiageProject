@@ -7,6 +7,8 @@ L'équipe projet est constituée de :
 * Jean-Baptiste Dohet
 * Marie Fagbemy
 
+Le projet utilise des accès fournis à l'équipe Machine Learning de Paris-Descartes par Microsoft Research dans le cadre d'un "Azure Research Grant".
+
 Cette page contient un descriptif du projet proposé ainsi que des éléments (indications de format, pseudo-code, etc.) fournis pour sa réalisation.
 
 ## Sujet proposé
