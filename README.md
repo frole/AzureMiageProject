@@ -2,10 +2,10 @@
 
 Ce projet est proposé et suivi par François Role, maître de conférences à l'université Paris-Descartes - francois.role@parisdescartes.fr
 L'équipe projet est constitué de :
-* prenom nom mail
-* 
-*
-*
+* Axelle Boyer
+* Emilie Cresson
+* Jean-Baptiste Dohet
+* Marie Fagbemy
 
 Cette page contient un descriptif du projet proposé ainsi que des éléments (indications de format, pseudo-code, etc.) fournis pour sa réalisation.
 
