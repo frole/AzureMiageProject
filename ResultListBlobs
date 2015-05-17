@@ -1,0 +1,39 @@
+{
+    "entries": [
+        {
+            "name": "InputForAdultCensusWS-without-target.csv",
+            "properties": {
+                "last-modified": "Thu, 14 May 2015 16:40:23 GMT",
+                "etag": "0x8D25C7BCEA6C8A4",
+                "content-length": "1649",
+                "content-type": "application/octet-stream",
+                "content-encoding": "",
+                "content-language": "",
+                "content-md5": "39K5J7waz6fNpfyrAFL47Q==",
+                "cache-control": "",
+                "content-disposition": "",
+                "blobtype": "BlockBlob",
+                "leasestatus": "unlocked",
+                "leasestate": "available"
+            }
+        },
+        {
+            "name": "projetazureml",
+            "properties": {
+                "last-modified": "Thu, 14 May 2015 22:09:29 GMT",
+                "etag": "0x8D25CA9C831BEB2",
+                "content-length": "1649",
+                "content-type": "text/csv",
+                "content-encoding": "",
+                "content-language": "",
+                "content-md5": "39K5J7waz6fNpfyrAFL47Q==",
+                "cache-control": "",
+                "content-disposition": "",
+                "blobtype": "BlockBlob",
+                "leasestatus": "unlocked",
+                "leasestate": "available"
+            }
+        }
+    ],
+    "continuationToken": null
+}
