@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-route.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>PPD Azure ML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="ppdazureml">
+	<div class="container">
+		<section id="header" class="col-xs-12">
+			<div class="row page-header">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="home">HOME</a></li>
+					<li role="login" id="wlogin"><a href="login">Sign in or Create
+							an account</a></li>
+					<li id="li-title">Welcome to PPD Azure ML</li>
+				</ul>
+			</div>
+		</section>
+		<section id="menu" class="col-xs-3">
+			<h1>MENU</h1>
+			<ul class="nav">
+                <li><a href="#/">Index</a></li>
+				<li><a href="#/importBlob">Importer un fichier</a></li>
+				<li><a href="#/exportBlob">Exporter un Blob</a></li>
+				<li><a href="#/containerList">Lister un container</a></li>
+				<li><a href="#/executeJob">Executer un Job Azure ML</a></li>
+			</ul>
+		</section>
+		<section id="content" class="col-xs-9">
+			<div class="row" ng-view>
+			</div>
+	</div>
+	</section>
+	</div>
+</body>
+
+<script src="scripts/vendor/angular-file-input.js"></script>
+<script src="scripts/vendor/Blob.js"></script>
+<script src="scripts/vendor/base64-binary.js"></script>
+<script src="scripts/vendor/FileSaver.min.js"></script>
+
+
+<script src="scripts/app.js"></script>
+<script src="scripts/service/ContainerService.js"></script>
+<script src="scripts/controller/ImportBlobCtrl.js"></script>
+<script src="scripts/controller/ExportBlobCtrl.js"></script>
+<script src="scripts/controller/ContainerListCtrl.js"></script>
+<script src="scripts/controller/ExecuteJobCtrl.js"></script>
+
+</html>

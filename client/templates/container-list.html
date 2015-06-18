@@ -1,0 +1,47 @@
+<h3>Lister un conteneur</h3>
+
+<p>
+    <form class="form-inline" ng-submit="listContainer()">
+        <div class="alert alert-danger" ng-show="error">{{error}}</div>
+        <div class="form-group">
+            <label for="containerName">Nom du conteneur</label>
+            <input type="text" class="form-control" id="containerName" placeholder="mon_conteneur" ng-model="containerName">
+        </div>
+        <button type="submit" class="btn btn-default">Lister le contenur</button>
+    </form>
+</p>
+
+<p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Taille</th>
+                <th>Modifié le</th>
+                <th>Type</th>
+                <th>Verrouillé</th>
+                <th>Displonible</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="entry in entries">
+                <td>{{ entry.name }}</td>
+                <td>{{ entry.properties['content-length'] }}</td>
+                <td>{{ entry.properties['last-modified'] }}</td>
+                <td>{{ entry.properties.blobtype }}</td>
+                <td>
+                    <i class="glyphicon glyphicon-lock" ng-show="entry.properties.leasestatus == 'locked'"></i>
+                </td>
+                <td>
+                    <i class="glyphicon glyphicon-ok" ng-show="entry.properties.leasestate == 'available'"></i>
+                </td>
+                <td>
+                    <button class="btn btn-default" ng-click="downloadEntry(entry)">
+                        <i class="glyphicon glyphicon-download-alt"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</p>

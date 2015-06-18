@@ -1,0 +1,32 @@
+[
+  {
+    "Name":"InputForAdultCensusWS-without-target.csv",
+    "Last Modified":"Tue, 12 May 2015 12:10:39 GMT",
+    "Length":1649
+  },
+  {
+    "Name":"InputForAdultCensusWS.csv",
+    "Last Modified":"Thu, 07 May 2015 15:14:48 GMT",
+    "Length":1692
+  },
+  {
+    "Name":"matrice.csv",
+    "Last Modified":"Thu, 21 May 2015 13:44:05 GMT",
+    "Length":126
+  },
+  {
+    "Name":"matrice_blob.csv",
+    "Last Modified":"Fri, 22 May 2015 07:54:42 GMT",
+    "Length":120
+  },
+  {
+    "Name":"matrix_blob.nh.csv",
+    "Last Modified":"Fri, 22 May 2015 13:20:16 GMT",
+    "Length":119
+  },
+  {
+    "Name":"params.csv",
+    "Last Modified":"Fri, 22 May 2015 14:18:26 GMT",
+    "Length":20
+  }
+]
