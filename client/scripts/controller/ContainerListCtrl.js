@@ -58,5 +58,9 @@ angular.module('ppdazureml').controller('ContainerListCtrl', ['$scope', 'Contain
                 });
         };
         
+        $scope.executeJob = function (entry) {
+            
+        };
+        
     }]
 );

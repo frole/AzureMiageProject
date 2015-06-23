@@ -21,7 +21,8 @@
                 <th>Type</th>
                 <th>Verrouillé</th>
                 <th>Displonible</th>
-                <th></th>
+                <th>Export</th>
+                <th>Execution</th>
             </tr>
         </thead>
         <tbody>
@@ -39,6 +40,11 @@
                 <td>
                     <button class="btn btn-default" ng-click="downloadEntry(entry)">
                         <i class="glyphicon glyphicon-download-alt"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-default" ng-click="executionJob(entry)">
+                        <i class="glyphicon glyphicon-play"></i>
                     </button>
                 </td>
             </tr>

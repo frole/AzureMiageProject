@@ -17,7 +17,6 @@ app.get('/', function(req, res) {
   var input_blob_path = "/" + storage_container_name + "/" + input_blob_name
 
   var input = {
-
     "Input": {
       "ConnectionString": connection_string,
       "RelativeLocation": input_blob_path
