@@ -8,10 +8,10 @@ app.get('/', function(req, res) {
 
   var url = "https://ussouthcentral.services.azureml.net/workspaces/fc2c031447724330b0191d8d28f40b8c/services/4f5ac2ab935c4dd8a72f68f5d0b3ca26/jobs"
 
-  var storage_account_name = <storage_account_name>
-  var storage_account_key = <storage_account_key>
-  var storage_container_name = <storage_container_name>
-  var input_blob_name = <file>
+  var storage_account_name = 'biodata2';
+  var storage_account_key = 'sQuBfDy7Eff+Jj1j29oWtpzeY08ABSY0V6tnk5sdizEbSFzGAJ00gJgCkdd3FuNPyK4SazoN2XIKEj5uTQDr+A==';
+  var storage_container_name = 'ppdazureml';
+  var input_blob_name = 'InputForAdultCensusWS-without-target.csv';
 
   var connection_string = "DefaultEndpointsProtocol=https;AccountName=" + storage_account_name + ";AccountKey=" + storage_account_key
   var input_blob_path = "/" + storage_container_name + "/" + input_blob_name
@@ -25,7 +25,7 @@ app.get('/', function(req, res) {
   }
 
   var myheaders = {
-    "Authorization": "Bearer <keyService>",
+    "Authorization": "Bearer wo0NT7r6O+zbNt+99ft/vviE/14kKvp8qTHG26mnIYVMwFa2IgcwM3E6aifuWk8s0PR93T3/Zf84QRUykKmO5w==",
     "Content-Type": "application/json;charset=utf-8"
   }
 

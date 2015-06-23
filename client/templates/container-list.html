@@ -38,14 +38,27 @@
                     <i class="glyphicon glyphicon-ok" ng-show="entry.properties.leasestate == 'available'"></i>
                 </td>
                 <td>
-                    <button class="btn btn-default" ng-click="downloadEntry(entry)">
+                    <a ng-href="/containers/{{containerName}}/blobs/{{entry.name}}" class="btn btn-default">
                         <i class="glyphicon glyphicon-download-alt"></i>
-                    </button>
+                    </a>
                 </td>
                 <td>
-                    <button class="btn btn-default" ng-click="executionJob(entry)">
+                    <button class="btn btn-default" ng-click="executeJob(entry)" ng-disabled="entry.running == true">
                         <i class="glyphicon glyphicon-play"></i>
                     </button>
+                    <div ng-show="entry.job != null">
+                        Etat du Job: 
+                        <span ng-switch="entry.job.status">
+                            <span ng-switch-when="0">En attente... </span>
+                            <span ng-switch-when="1">En cours d'exécution... </span>
+                            <span ng-switch-when="2">Erreur lors de l'exécution du job.</span>
+                            <span ng-switch-when="3">Erreur lors de l'exécution du job.</span>
+                            <span ng-switch-when="4">
+                                OK, job terminé. <br>
+                                <a ng-href="{{ entry.job.result.BaseLocation}}{{entry.job.result.RelativeLocation }}">Blob généré</a> <br>
+                            </span>
+                        </span>
+                    </div>
                 </td>
             </tr>
         </tbody>

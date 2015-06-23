@@ -13,8 +13,17 @@ angular.module('ppdazureml').service('ContainerService', ['$http',
          return $http.post('/containers/' + containerName + '/blobs', postData);
      };
      
-     this.getBlob = function (containerName, blobName) {
-         return $http.get('/containers/' + containerName + '/blobs/' + blobName);
+     this.executeJob = function (containerName, blobName) {
+         var postData = {
+             containerName : containerName,
+             blobName: blobName
+         };
+         console.log('OK Service');
+         return $http.post('/containers/' + containerName + '/blobs/' + blobName + '/executeJob', postData);
+     };
+     
+     this.getJob = function (jobId) {
+         return $http.get('/jobs/' + jobId);
      };
      
  }]
