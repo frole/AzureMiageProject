@@ -67,8 +67,8 @@ app.post('/containers/:containerName/blobs/:blobName/executeJob', function(req, 
 
     var url = "https://ussouthcentral.services.azureml.net/workspaces/fc2c031447724330b0191d8d28f40b8c/services/4f5ac2ab935c4dd8a72f68f5d0b3ca26/jobs";
 
-    var storage_account_name = process.env.AZURE_STORAGE_ACCOUNT; // TODO: Read from ENV 
-    var storage_account_key = process.env.AZURE_STORAGE_ACCESS_KEY; // TODO: Read from env
+    var storage_account_name = process.env.AZURE_STORAGE_ACCOUNT;
+    var storage_account_key = process.env.AZURE_STORAGE_ACCESS_KEY;
     var storage_container_name = req.param('containerName');
     var input_blob_name = req.param('blobName');
 
@@ -90,7 +90,7 @@ app.post('/containers/:containerName/blobs/:blobName/executeJob', function(req, 
     }
 
     var myheaders = {
-        "Authorization": "Bearer wo0NT7r6O+zbNt+99ft/vviE/14kKvp8qTHG26mnIYVMwFa2IgcwM3E6aifuWk8s0PR93T3/Zf84QRUykKmO5w==",
+        "Authorization": "Bearer <key>",
         "Content-Type": "application/json;charset=utf-8"
     }
 
@@ -120,7 +120,7 @@ app.post('/containers/:containerName/blobs/:blobName/executeJob', function(req, 
 app.get('/jobs/:jobId', function(req, res) {
     var jobId = req.param('jobId');
     var myheaders = {
-        "Authorization": "Bearer wo0NT7r6O+zbNt+99ft/vviE/14kKvp8qTHG26mnIYVMwFa2IgcwM3E6aifuWk8s0PR93T3/Zf84QRUykKmO5w==",
+        "Authorization": "Bearer <key>",
         "Content-Type": "application/json;charset=utf-8"
     };
     var options2 = {
